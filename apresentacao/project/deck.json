@@ -1,0 +1,21 @@
+{
+  "v": 5,
+  "createdOnFiles": {"v": 1, "at": "2026-11-24T12:00:00Z"},
+  "lists": "css",
+  "format": {"v": 1, "shared": ["project/deck.css"]},
+  "title": "Quem é parente de quem? A árvore da vida pelo DNA",
+  "order": ["cover", "pergunta", "dados", "analogia", "algoritmo", "validacao", "heatmap", "arvore", "resultado", "complexidade", "conclusao", "fim"],
+  "sections": {
+    "s1": {"description": "A pergunta e o DNA como um texto de quatro letras.", "start": "cover"},
+    "s2": {"description": "Os dados: o gene CYTB de 15 espécies, baixado do NCBI.", "start": "dados"},
+    "s3": {"description": "O algoritmo de alinhamento Needleman-Wunsch, feito do zero e validado.", "start": "analogia"},
+    "s4": {"description": "O resultado: matriz de distância, árvore e o que bateu com a biologia.", "start": "heatmap"},
+    "s5": {"description": "O custo computacional: o tempo cresce como n·m.", "start": "complexidade"},
+    "s6": {"description": "Conclusões e limitações.", "start": "conclusao"}
+  },
+  "faces": {
+    "dm-sans": {"family": "DM Sans", "href": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"}
+  },
+  "designSystems": []
+}

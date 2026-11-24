@@ -1,0 +1,16 @@
+<section id="complexidade" class="light" data-transition="fade">
+<p class="eyebrow">O CUSTO COMPUTACIONAL</p>
+<h2>Dobrou o tamanho, o tempo quadruplica</h2>
+<div class="row" style="gap:48px;margin-top:8px">
+<div class="fig" style="width:1132px">
+<img src="/_blob/92faeca2fd97a7aad49bb6661e1c4749" alt="Gráficos de tempo versus tamanho das sequências para Python puro, NumPy e Biopython, em escala linear e log-log" style="width:1100px;height:539px;object-fit:contain">
+</div>
+<div class="col" style="gap:20px">
+<div class="stat"><p class="n">O(n·m)</p><p class="l">uma casa da tabela para cada par de letras</p></div>
+<div class="stat"><p class="n">n^2,1</p><p class="l">expoente medido no Python puro, como previsto</p></div>
+<div class="stat"><p class="n">18×</p><p class="l">NumPy mais rápido; Biopython (C) é o mais rápido de todos</p></div>
+</div>
+</div>
+<p class="foot">Sequências de 100 a 1.100 bases (humano × vaca)</p>
+<aside>Quanto custa fazer isso? A tabela tem uma casinha para cada par de letras, então dobrar o tamanho das sequências quadruplica o tempo. Medi com sequências de 100 a 1.100 letras: o Python puro acompanha a linha tracejada do crescimento ao quadrado (expoente medido 2,1). A versão com NumPy é cerca de 18 vezes mais rápida, e a do Biopython, escrita em C, é a mais rápida. Para 15 espécies isso é rapidinho; para genomas gigantes esse algoritmo seria inviável, e por isso os pesquisadores usam atalhos.</aside>
+</section>

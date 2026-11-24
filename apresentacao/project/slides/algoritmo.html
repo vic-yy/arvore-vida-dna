@@ -1,0 +1,17 @@
+<section id="algoritmo" class="light" data-transition="fade">
+<div class="row" style="gap:64px">
+<div class="fig" style="width:752px">
+<img src="/_blob/183b69d102d244f932c0034a0fbd8861" alt="Matriz de pontuação de Needleman-Wunsch para GATTACA contra GCATGCA, com o caminho do traceback em laranja" style="width:720px;height:728px;object-fit:contain">
+</div>
+<div class="col" style="gap:28px">
+<p class="eyebrow">O ALGORITMO</p>
+<h2>Needleman-Wunsch</h2>
+<p class="lead">Uma tabela em que cada casa guarda a melhor pontuação possível até ali. Voltando pelo caminho laranja, o alinhamento aparece.</p>
+<div class="pts"><div class="chip"><p>+1</p></div><p class="txt">letra igual</p></div>
+<div class="pts"><div class="chip"><p>−1</p></div><p class="txt">letra diferente</p></div>
+<div class="pts"><div class="chip"><p>−2</p></div><p class="txt">buraco</p></div>
+</div>
+</div>
+<p class="foot">Programado do zero em Python (preenchimento da matriz + traceback)</p>
+<aside>Como o computador acha o melhor alinhamento entre bilhões de possibilidades? Com o algoritmo de Needleman-Wunsch, que eu programei do zero. Ele monta uma tabela: cada casinha guarda a melhor pontuação possível até aquele ponto. Letra igual dá ponto, letra diferente ou buraco tira ponto. Depois é só seguir o caminho de volta, a linha laranja, e o alinhamento aparece. Aqui o exemplo é curto (GATTACA contra GCATGCA); o notebook faz o mesmo com os genes de 1.140 letras.</aside>
+</section>

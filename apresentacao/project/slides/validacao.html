@@ -1,0 +1,24 @@
+<section id="validacao" class="light" data-transition="fade">
+<p class="eyebrow">VALIDAÇÃO</p>
+<h2>Mesma pontuação do Biopython em todos os pares</h2>
+<div class="row" style="gap:64px;margin-top:8px">
+<div style="width:1040px">
+<table style="width:1040px;font-size:30px;color:#13243A">
+<tr class="hd"><th style="width:46%;color:#F5F2EA">Par de espécies</th><th style="width:18%;color:#F5F2EA;text-align:right">Meu código</th><th style="width:18%;color:#F5F2EA;text-align:right">Biopython</th><th style="width:18%;color:#F5F2EA;text-align:right">Identidade</th></tr>
+<tr><td>Humano × Chimpanzé</td><td style="text-align:right">885</td><td style="text-align:right">885</td><td style="text-align:right">88,9%</td></tr>
+<tr><td>Humano × Gorila</td><td style="text-align:right">858</td><td style="text-align:right">858</td><td style="text-align:right">87,7%</td></tr>
+<tr><td>Cachorro × Lobo</td><td style="text-align:right">1130</td><td style="text-align:right">1130</td><td style="text-align:right">99,6%</td></tr>
+<tr><td>Gato × Leão</td><td style="text-align:right">846</td><td style="text-align:right">846</td><td style="text-align:right">87,1%</td></tr>
+<tr><td>Baleia-azul × Hipopótamo</td><td style="text-align:right">704</td><td style="text-align:right">704</td><td style="text-align:right">81,0%</td></tr>
+<tr><td>Humano × Galinha</td><td style="text-align:right">537</td><td style="text-align:right">537</td><td style="text-align:right">74,1%</td></tr>
+<tr><td>Humano × Peixe-zebra</td><td style="text-align:right">451</td><td style="text-align:right">451</td><td style="text-align:right">70,2%</td></tr>
+</table>
+</div>
+<div class="col" style="gap:20px">
+<div class="stat"><p class="n">7 de 7</p><p class="l">pares com pontuação ótima idêntica à da biblioteca profissional</p></div>
+<div class="stat"><p class="n">18×</p><p class="l">mais rápido com NumPy, produzindo exatamente a mesma matriz</p></div>
+</div>
+</div>
+<p class="foot">Genes completos, 1.140 letras cada. Pontuação: +1 igual, −1 diferente, −2 buraco</p>
+<aside>Como saber se meu código está certo? Comparei com o PairwiseAligner do Biopython, uma biblioteca profissional, com a mesma pontuação. Nos 7 pares testados a pontuação foi idêntica. A identidade pode diferir um pouco quando há vários alinhamentos igualmente bons, mas nesses pares coincidiu. Também fiz uma versão com NumPy que dá exatamente a mesma matriz, cerca de 18 vezes mais rápida: um par de genes em cerca de 0,01 segundo.</aside>
+</section>

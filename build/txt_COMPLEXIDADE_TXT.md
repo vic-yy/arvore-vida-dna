@@ -1,0 +1,6 @@
+### O que as medições mostram
+* **Python puro:** o expoente medido fica perto de **2** (a curva acompanha a linha tracejada O(n²) no gráfico log-log). Dobrar o tamanho multiplica o tempo por ~4, como a teoria prevê. O custo por célula (coluna "µs por célula") fica praticamente constante.
+* **NumPy:** é muito mais rápido, mas o expoente medido é **menor que 2** (em torno de 1,3 a 1,4). Isso **não** significa que o algoritmo deixou de ser O(n·m): o trabalho total continua sendo n·m, só que agora feito em C, e para tamanhos pequenos o tempo é dominado pelo custo fixo de cada uma das n iterações do laço em Python (~O(n)). Com sequências bem maiores, a curva tenderia a se inclinar para 2.
+* **Biopython:** é o mais rápido (implementado em C, sem a sobrecarga do Python). Nosso algoritmo em NumPy fica a poucas vezes de distância dele nos tamanhos de um gene, e o em Python puro quase duas ordens de grandeza.
+
+**Por que isso importa?** Alinhar 15 espécies exige 105 pares, o que é tranquilo. Já alinhar, por exemplo, milhares de genomas inteiros (milhões de bases) com este algoritmo seria inviável: o custo O(n·m) explode. Por isso a bioinformática usa heurísticas e programas otimizados.
